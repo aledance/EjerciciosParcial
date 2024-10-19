@@ -1,0 +1,23 @@
+* Curso TypeScript
+** seccion 10 NameSpaces
+- [ ] Curso de javascript moderno: ver explicacion manejo *webpack* para desarrollo a detalle de rutas
+
+** seccion 11 Genericos
+- axios: libreria para hacer manejo de peticiones http
+    - npm i axios
+- shortcuts 
+    - clg //autocompletacion para console log
+- interfaces
+    - buena practica: ordenar en index.ts de forma ascendente (M-x sort-lines-ascending)
+
+** Seccion  13
+carpeta dist: contiene los archivos compilados
+- tsc --init: crea el archivo de configuracion de typescript
+    dentro de este file (tsconfig.json): "ourDir": "./dist", //carpeta donde se guardaran los archivos compilados
+- en el caso de express, pasar de require a import (sintaxis de TS), e instalar lo que requiere en el suggest
+- una vez hecho esto, ya se puede tipar todo lo de typescript (como aparece en video - [[https://cursos.devtalles.com/courses/take/typescript-guia-completa/lessons/35397705-trabajar-con-typescript-en-lugar-de-javascript][TypeScript: Tu completa guía y manual de mano. - DevTalles TypeScript: Tu completa guía y manual de mano. - DevTalles]])
+- npm run dev: para correr el servidor
+- tsc -w: para que compile automaticamente (modo watch)
+- para actualizar el archivo dist/index.js se debe usar node dist/index.js (ya que el archivo index.js no se actualiza automaticamente) requiere instalar nodemon 
+- archivos de interface =/= archivos de tipos TS
+    - archivos de interface definen los tipos de datos de un objeto/s y/o clase/s, mientras que archivos de tipos trabajan con modulos y/o librerias externas para que TypeScript pueda transpilar todo correctamente
